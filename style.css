@@ -5,6 +5,7 @@ body,html
     width: 1920px;
     height: 600px;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
 }
 
 img{
@@ -131,6 +132,7 @@ button
     height: 80px;
     margin-top: 30px;
     margin-left: 100px;
+    margin-bottom: 0px;
 }
 .portfolio-card
 {
@@ -138,7 +140,7 @@ button
     background-color: rgb(197, 247, 242);
     margin-top: 30px;
     margin-left: 100px;
-    height: 550px;
+    height: 580px;
     width: 380px ; 
     display: inline-block;
     border-radius: 20px;
@@ -169,7 +171,7 @@ div.card-text>h4
 {
     position: relative;
     color: white;
-    padding: 0px;
+    padding-top: 50px;
     margin: 30px 100px;
     background-color: black;
     border-radius: 6px;
@@ -189,7 +191,7 @@ div.card-text>h4
 }
 
 input
-{
+{   font-size: 25px;
     width: 400px;
     padding: 8px 16px 8px 16px;
     margin: 8px 0px 8px 0px;
@@ -251,6 +253,7 @@ div.Icons>p
     position: absolute;
     color: white;
     padding: 1em;
+    padding-top: 50px;
     right: 0;
     top: 0;
     letter-spacing: 0.5em;
