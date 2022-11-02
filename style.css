@@ -46,13 +46,14 @@ img{
 p.Social-icons
 {
     position: absolute;
+    float: right;
     color: white;
-    font-size: 200%;
-    margin-right: 1em;
-    margin-top: 1em;
+    font-size: 100%;
+    /* margin-right: 1em;
+    margin-top: 1em; */
     right: 0;
-    gap: 5px;
-    height: 1em;
+    margin: 0px;
+    /* height: 0.5em; */
 }
 
 button
@@ -77,7 +78,7 @@ button
     background-color: white;
     position: relative;
     margin: 30px 200px;
-    height: 300px;
+    height: 250px;
     display: flexbox;
     text-align: center;
     align-items: center;
@@ -88,7 +89,7 @@ button
     position: absolute;
     display: flex;
     /* margin: 0px 300px; */
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     width: 800px;
     height: 150px;
@@ -97,7 +98,7 @@ button
     color: black;
 }
 
-h3
+.About-me>h2
 {
     width: 1520px;
     align-items: center;
@@ -116,14 +117,14 @@ h3
     position: relative;
     width: 1520px;
     height: 1500px;
-    margin: 30px 200px ;
+    margin: 15px 200px ;
     background-color: black;
     display: inline-block;
 }
 .portfolio h2
 {
     /* position: absolute; */
-    font-size: 75px;
+    font-size: 50px;
     color: aliceblue;
     letter-spacing: 2px;
     width: 500px;
@@ -163,6 +164,95 @@ div.card-text>h4
 
 /* portfolio style ends */
 
-/* Get in touch and social section style starts */
+/* 'Get in touch and social' section style starts */
+.container
+{
+    position: relative;
+    color: white;
+    padding: 0px;
+    margin: 30px 100px;
+    background-color: black;
+    border-radius: 6px;
+    box-shadow: 0px white;
+}
+    
+#contactForm>h1
+{
+    font-size: 50px;
+}
+#contactForm
+{
+        height: 600px;
+        width: 500px;
+        padding: 0px;
+        margin: 0px;
+}
 
-/* Get in touch and social section style ends */
+input
+{
+    width: 400px;
+    padding: 8px 16px 8px 16px;
+    margin: 8px 0px 8px 0px;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+
+input:nth-child(18)
+{
+    background-color: #1ac0f3;
+    text-align: center;
+    color: white;
+    width: 435px;
+    padding: 8px 16px 8px 16px;
+    margin: 8px 0px 8px 0px;
+    border-radius: 6px;
+    border: 2px solid white;
+}
+
+textarea
+{
+    padding: 8px 16px 8px 16px;
+    margin: 8px 0px 8px 0px;
+    border-radius: 6px;
+    width: 400px;
+    border: 2px solid white;
+    /* margin: 8px 0px 8px 0px; */
+    border-radius: 6px;
+}
+
+.container>button
+{
+    width: 400px;
+    background-color: #1ac0f3;
+    /* padding: 14px 20px 14px 20px; */
+    cursor: pointer;
+    padding: 8px 16px 8px 16px;
+    margin: 8px 0px 8px 0px;
+    border-radius: 6px;
+}
+
+input:hover
+{
+    background-color: rgb(21, 245, 208);
+}
+
+.fa-brands
+{
+    /* position:absolute; */
+    line-height: 1em;
+    font-size: 150%;
+    margin-right: 1em;
+    margin-top: 1em;
+    
+    
+}
+div.Icons>p
+{
+    position: absolute;
+    color: white;
+    padding: 1em;
+    right: 0;
+    top: 0;
+    letter-spacing: 0.5em;
+}
+/* 'Get in touch and social' section style ends */
