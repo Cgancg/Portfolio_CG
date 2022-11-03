@@ -1,28 +1,32 @@
+*
+{   box-sizing: border-box;    
+    margin: 0;
+    padding: 0;
+}
 body,html
-{    
-    background-color: rgb(13, 22, 22);
-    position: relative;
-    width: 1920px;
-    height: 600px;
+{
+    width: 100%;
+    height: 100%;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
+    background-color: rgb(13, 22, 22);
+    font-size: 12px;
 }
 
-img{
+Img
+{
     /*default all images are 100% of their container*/
     width:100%;
-    border-radius: 20px 20px 0 0;
-    height: 264px;
-    width: 380px;
 } 
 
-/* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+/* The hero Section */
+.hero-image 
+{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). 
+  This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("Img/hero-img.jpg");
 
   /* Set a specific height */
-  height: 50%;
+  height: 30%;
   margin: 0px 200px;
 
   /* Position and center the image to scale nicely on all screens */
@@ -35,51 +39,46 @@ img{
 /* Place text in the middle of the image */
 .hero-text 
 {
-  font-size: 25px;  
+    
+  font-size: 12px;  
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
 
-p.Social-icons
+p#Social-icons
 {
     position: absolute;
-    float: right;
+    gap: 5px;    
+    display: flex;
     color: white;
-    font-size: 100%;
-    /* margin-right: 1em;
-    margin-top: 1em; */
     right: 0;
-    margin: 0px;
-    /* height: 0.5em; */
+    margin: 10px;
+    /* justify-content: space-evenly; */
+    
 }
 
 button
 {
         display: inline-block;
-        /* position: absolute; */
         background-color: whitesmoke;
-        border-radius: 10px;
         border: 4px double #cccccc;
         color: black;
         text-align: center;
         align-items: center;
-        font-size: 20px;
-        padding: 10px;
-        width: 200px;
+        font-size: 12px;
+        padding: 2px;
         cursor: pointer;
-        margin: 5px;
+        margin: 10px;
 }
 
 .About-me
 {
     background-color: white;
-    position: relative;
-    margin: 30px 200px;
-    height: 250px;
+    margin: 20px 200px;
     display: flexbox;
     text-align: center;
     align-items: center;
@@ -87,27 +86,24 @@ button
 
 #About-me
 {
-    position: absolute;
     display: flex;
-    /* margin: 0px 300px; */
-    font-size: 20px;
-    font-weight: 500;
-    width: 800px;
-    height: 150px;
-    top: 100px;
-    left: 400px;
+    text-align: center;
+    font-size: 15px;
+    align-items: center;
+    /* margin-bottom: 20px;
+    padding-bottom: 20px; */
     color: black;
+    margin:0px 20px 20px 20px;
+    padding-bottom: 20px;
 }
 
 .About-me>h2
 {
-    width: 1520px;
     align-items: center;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     margin: 0px;
-    position: absolute;
-    font-size: 40px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -115,52 +111,65 @@ button
 
 .portfolio
 {
-    position: relative;
-    width: 1520px;
-    height: 1500px;
-    margin: 15px 200px ;
+    margin: 0px 200px ;
     background-color: black;
-    display: inline-block;
 }
-.portfolio h2
+h2.Portfolio-header
 {
-    /* position: absolute; */
-    font-size: 50px;
+    background-color: black;
+    text-align: center;
+    font-size: 15px;
     color: aliceblue;
     letter-spacing: 2px;
-    width: 500px;
-    height: 80px;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-bottom: 0px;
+    padding: 10px;
+    margin: 30px 200px 0px ;
+}
+.portfolio-div
+{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
 }
 .portfolio-card
 {
-    /* padding-top: 300px; */
+    position: relative;
     background-color: rgb(197, 247, 242);
     margin-top: 30px;
-    margin-left: 100px;
-    height: 580px;
-    width: 380px ; 
+    margin-left: 30px;
     display: inline-block;
-    border-radius: 20px;
-    box-shadow:1px 1px 10px 2px lightgray;
+    justify-content: space-evenly;
+    height: 350px;
+    width: 180px;
     vertical-align: top;   
-    /* position: absolute; */
 }
-div.card-text>p
+
+#Port-img
 {
-    color: rgb(37, 103, 226);
-    margin: 15px;
+    position: absolute;
+    height: 180px;
+    width: 180px;
 }
-div.card-text>h4
+
+#card-text
+{
+    position:absolute;
+    bottom: 10px;
+}
+#card-text>p
+{   
+    
+    color: rgb(37, 103, 226);
+    margin: 10px;
+    font-size: 10px; 
+}
+
+#card-text>h4
 {
     text-transform: capitalize;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 12px;
     font-weight: bold;
-    padding-bottom: 10px;
     margin: 15px;
 }
 
@@ -172,27 +181,31 @@ div.card-text>h4
     position: relative;
     color: white;
     padding-top: 50px;
-    margin: 30px 100px;
+    margin: 30px;
     background-color: black;
-    border-radius: 6px;
-    box-shadow: 0px white;
+    display: flexbox;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* text-align: center;
+    align-items: center; */
 }
     
 #contactForm>h1
 {
-    font-size: 50px;
+    font-size: 20px;
+    padding-bottom: 10px;
 }
 #contactForm
 {
-        height: 600px;
-        width: 500px;
+        height: 420px;
+        width: 250px;
         padding: 0px;
         margin: 0px;
 }
 
 input
-{   font-size: 25px;
-    width: 400px;
+{   font-size: 10px;
+    width: 250px;
     padding: 8px 16px 8px 16px;
     margin: 8px 0px 8px 0px;
     border-radius: 6px;
@@ -201,12 +214,13 @@ input
 
 input:nth-child(18)
 {
-    background-color: #1ac0f3;
+    background-color: #174857;
     text-align: center;
     color: white;
-    width: 435px;
-    padding: 8px 16px 8px 16px;
-    margin: 8px 0px 8px 0px;
+    width: 250px;
+    font-size: 12px;
+    padding: 8px 16px;
+    margin: 8px 0px;
     border-radius: 6px;
     border: 2px solid white;
 }
@@ -216,9 +230,8 @@ textarea
     padding: 8px 16px 8px 16px;
     margin: 8px 0px 8px 0px;
     border-radius: 6px;
-    width: 400px;
+    width: 250px;
     border: 2px solid white;
-    /* margin: 8px 0px 8px 0px; */
     border-radius: 6px;
 }
 
@@ -238,24 +251,78 @@ input:hover
     background-color: rgb(21, 245, 208);
 }
 
-.fa-brands
+/* div.Icons
 {
-    /* position:absolute; */
+    position:absolute;
     line-height: 1em;
     font-size: 150%;
     margin-right: 1em;
     margin-top: 1em;
     
     
-}
-div.Icons>p
+} */
+.Icons>p
 {
     position: absolute;
     color: white;
     padding: 1em;
-    padding-top: 50px;
+    padding-top: 60px;
     right: 0;
     top: 0;
     letter-spacing: 0.5em;
+    flex-direction: column;
+    align-items: flex-start;
 }
-/* 'Get in touch and social' section style ends */
+/* 'Get in touch and social' section style ends */ 
+
+
+@media screen and (max-width:960px)
+{
+    .hero-image
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    p#Social-icons
+    {
+        top: 0;
+        right: 0;
+    }
+   
+    .portfolio-card
+    {
+        width: 100%;
+        position: relative;
+    } 
+    #Port-img
+    {
+        position: absolute;
+        width: 100%;
+    }
+    .portfolio-div
+    {
+        display: flex;
+        justify-content: center;
+    }
+    #card-text
+    {   
+        /* position: absolute; */
+        margin: 2px;
+    }
+    .container
+    {
+        position: relative;
+        width: 100%;
+        height: 100%; 
+        margin: 0px; 
+    }
+    #contactForm
+    {   
+        position: absolute;
+        padding-top: 80px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
