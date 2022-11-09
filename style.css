@@ -130,25 +130,27 @@ h2.Portfolio-header
 }
 .portfolio-card
 {
-    position: relative;
     background-color: rgb(197, 247, 242);
     display: inline-block;
     justify-content: space-evenly;
     height: 350px;
     width: 200px;
-    vertical-align: top;   
+    vertical-align: top;  
+    margin: 5px; 
+    
 }
 
 #Port-img
 {
-    position: absolute;
+    border-radius: 5px 5px 0 0 ;
+    margin: 5px;
     height: 180px;
-    width: 180px;
+    width: 180px; 
+    
 }
 
 #card-text
 {
-    position:absolute;
     bottom: 10px;
 }
 #card-text>p
@@ -270,6 +272,7 @@ input:hover
     body
     {
         min-width: 768px;
+        overflow-x:none;
     }
     
     .hero-image
@@ -312,11 +315,15 @@ input:hover
     .portfolio-card
     {
         flex: 100%;
+        padding: 5px;
+        margin-top: 10%;
+        margin-left: 7%;
     } 
 
     #Port-img
     {
         width: 100%;
+        margin: 0px;
     }
     .portfolio-div
     {
@@ -363,17 +370,24 @@ input:hover
 /* media queries for phone */
 @media screen and (max-width:768px)
 {
+    body{
+        overflow-x:none;
+    }
     .portfolio-card
     {
         flex: 50%;
-        display: flex;
+        display: block;
         padding: 5px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
         margin-top: 10%;
         margin-left: 25%;
     } 
     #Port-img
     {
         width: 100%;
+        margin: 0;
     }
     .portfolio-div
     {
@@ -385,10 +399,33 @@ input:hover
         vertical-align: top; 
     } 
 }
+/* two additional media queries to adjust to page view */
+
 @media screen and (max-width:1040px) and (min-width:960px)
 {
     .Icons>p
     {
+        /* Social icons to disappear and then reappear for page view */
         display: none;
     }
+}
+
+@media screen and (max-width:990px) and (min-width:960px)
+{
+    .portfolio-card
+    {
+        flex: 100%;
+        padding: 5px;
+        margin-top: 10%;
+        margin-left: 7%;
+    } 
+    .portfolio-div
+    {
+        display: inline-block; 
+        align-items: center;
+        flex-direction: row; 
+        width: 100%;
+        justify-content: space-evenly;
+        vertical-align: top; 
+    } 
 }
